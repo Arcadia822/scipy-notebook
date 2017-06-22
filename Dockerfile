@@ -10,7 +10,7 @@ RUN conda install --quiet --yes 'xgboost'
 
 # python 2 package installation
 
-RUN conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7 'xgboost'
+RUN conda install --quiet --yes python=2.7 'xgboost'
 
 
 VOLUME ["/home/jovyan/work"]
